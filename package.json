@@ -1,0 +1,24 @@
+{
+  "name": "nsPokedex",
+  "main": "src/app.ts",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@nativescript/core": "dev",
+    "nativescript": "^9.1.0-dev.2026-06-16-27624885927",
+    "nativescript-vue": "3.0.2"
+  },
+  "devDependencies": {
+    "@nativescript/tailwind": "~4.0.3",
+    "@nativescript/types": "~8.9.1",
+    "@nativescript/webpack": "dev",
+    "@nativescript/windows": "^0.1.0-beta.1",
+    "@types/node": "~22.14.0",
+    "tailwindcss": "^4.1.3",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "clean": "npx ns clean",
+    "start": "npx ns run windows"
+  }
+}

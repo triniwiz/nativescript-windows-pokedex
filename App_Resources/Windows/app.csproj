@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <AppDisplayName>Pokédex</AppDisplayName>
+    <AppDescription>Browse the National Pokédex — built with NativeScript on Windows.</AppDescription>
+  </PropertyGroup>
+</Project>
