@@ -12,7 +12,7 @@
     "@nativescript/tailwind": "~4.0.3",
     "@nativescript/types": "~8.9.1",
     "@nativescript/webpack": "dev",
-    "@nativescript/windows": "^0.1.0-beta.1",
+    "@nativescript/windows": "^0.1.0-beta.3",
     "@types/node": "~22.14.0",
     "tailwindcss": "^4.1.3",
     "typescript": "^5.8.3"
