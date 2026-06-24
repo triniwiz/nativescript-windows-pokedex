@@ -6,14 +6,13 @@ A desktop Pokédex demo built with **NativeScript + Vue 3**, running natively on
 
 ## Prerequisites
 
-The app builds a real WinUI 3 desktop app with `dotnet build`, so you need the Windows toolchain in place before the CLI can run. These are the same requirements the NativeScript CLI's `ns doctor windows` checks for:
+The app builds a real WinUI 3 desktop app with `dotnet build`, so you need the Windows toolchain in place before the CLI can run. These are the same requirements the NativeScript CLI's `ns doctor windows` checks for.
 
 | Requirement | Notes |
 |---|---|
 | **Windows 10 1809 (build 17763) or later** | The app targets `net10.0-windows10.0.26100.0` with a minimum OS of `10.0.17763.0`. |
 | **[Node.js](https://nodejs.org) (LTS)** | Provides `npm` / `npx`, used to install dependencies and drive the CLI. |
 | **[.NET 10 SDK](https://dotnet.microsoft.com/download)** | The build invokes `dotnet build` / `dotnet publish`. Verify with `dotnet --version`. |
-| **Windows App SDK dotnet workload** | Install it once: `dotnet workload install windows`. Verify with `dotnet workload list` (you should see a `windows` entry). |
 | **MSBuild on `PATH`** | Comes with the .NET SDK or Visual Studio. |
 | **Developer Mode enabled** | Windows Settings → **Privacy & Security** → **For Developers** → turn on **Developer Mode**. Required so the unsigned debug build can be registered (`Add-AppxPackage -Register`) and launched locally. |
 
@@ -23,9 +22,7 @@ You do **not** need to install the NativeScript CLI globally — it's already a 
 
 ```sh
 # 1. Install the .NET 10 SDK from https://dotnet.microsoft.com/download
-# 2. Add the Windows App SDK workload
-dotnet workload install windows
-# 3. Enable Developer Mode (Windows Settings → Privacy & Security → For Developers)
+# 2. Enable Developer Mode (Windows Settings → Privacy & Security → For Developers)
 ```
 
 ## Quick start
@@ -71,6 +68,6 @@ nativescript.config.ts      # app id (org.nativescript.nsPokedex) and platform c
 
 ## Troubleshooting
 
-- **`dotnet workload list` doesn't show `windows`** — re-run `dotnet workload install windows`, then `dotnet workload list` to confirm. Without it, the `windows10.0.*` target framework can't be resolved and the build fails.
+- **Build can't resolve the `net10.0-windows10.0.*` target framework** — this is provided by the .NET SDK, not a workload (there is no `windows` workload — only `maui-windows`, which this project doesn't use). Make sure you're on the **.NET 10 SDK** (`dotnet --version`) and let `dotnet build` restore the `Microsoft.WindowsAppSDK` / `Microsoft.Windows.SDK.BuildTools` NuGet packages.
 - **App builds but won't launch / "deployment failed"** — make sure **Developer Mode** is on. The debug flow registers an unsigned package, which Windows blocks otherwise.
 - **Stale or corrupted build** — run `npm run clean`, then `npm run start` again.
