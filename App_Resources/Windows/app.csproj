@@ -2,5 +2,6 @@
   <PropertyGroup>
     <AppDisplayName>Pokédex</AppDisplayName>
     <AppDescription>Browse the National Pokédex — built with NativeScript on Windows.</AppDescription>
+    <ApplicationManifest Condition="'$(ApplicationManifest)' == '' and Exists('$(MSBuildThisFileDirectory)app.manifest')">$(MSBuildThisFileDirectory)app.manifest</ApplicationManifest>
   </PropertyGroup>
 </Project>
