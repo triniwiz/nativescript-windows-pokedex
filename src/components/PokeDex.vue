@@ -421,13 +421,13 @@ onMounted(loadMore)
   font-size: 20;
   font-weight: 900;
   color: #cc1111;
-  letter-spacing: 5;
+  letter-spacing: 0.25;
 }
 .app-subtitle {
   font-size: 11;
   color: #3a3a5a;
   margin-top: 2;
-  letter-spacing: 0.5;
+  letter-spacing: 0.05;
   vertical-align: middle;
 }
 .app-count {
@@ -472,7 +472,7 @@ onMounted(loadMore)
 .type-chip {
   font-size: 8;
   font-weight: 800;
-  letter-spacing: 0.5;
+  letter-spacing: 0.06;
   padding: 3 6;
   margin-right: 5;
   border-radius: 8;
@@ -517,13 +517,13 @@ onMounted(loadMore)
 .poke-types-text {
   font-size: 9;
   font-weight: 800;
-  letter-spacing: 1;
+  letter-spacing: 0.11;
   margin-top: 4;
 }
 .poke-type-badge {
   font-size: 7;
   font-weight: 900;
-  letter-spacing: 0.5;
+  letter-spacing: 0.07;
   color: white;
   padding: 2 7;
   border-radius: 6;
@@ -606,7 +606,7 @@ onMounted(loadMore)
 .list-msg-action {
   font-size: 11;
   font-weight: 800;
-  letter-spacing: 1;
+  letter-spacing: 0.09;
   color: #cc1111;
   text-align: center;
   margin-top: 16;

@@ -209,7 +209,7 @@ const totalStats = computed(() => props.pokemon.stats.reduce((sum, s) => sum + s
 .detail-badge {
   font-size: 11;
   font-weight: 800;
-  letter-spacing: 1;
+  letter-spacing: 0.09;
   color: white;
   padding: 4 16;
   border-radius: 14;
@@ -221,7 +221,7 @@ const totalStats = computed(() => props.pokemon.stats.reduce((sum, s) => sum + s
 .phys-label {
   font-size: 9;
   font-weight: 800;
-  letter-spacing: 2;
+  letter-spacing: 0.22;
   color: #4a4a6a;
   text-align: center;
 }
@@ -238,7 +238,7 @@ const totalStats = computed(() => props.pokemon.stats.reduce((sum, s) => sum + s
 .section-title {
   font-size: 9;
   font-weight: 800;
-  letter-spacing: 2;
+  letter-spacing: 0.22;
   color: #4a4a6a;
   margin-bottom: 16;
 }
@@ -288,7 +288,7 @@ const totalStats = computed(() => props.pokemon.stats.reduce((sum, s) => sum + s
 .total-label {
   font-size: 11;
   font-weight: 800;
-  letter-spacing: 1;
+  letter-spacing: 0.09;
   color: #7a7a9a;
 }
 .total-value {
