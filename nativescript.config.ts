@@ -8,5 +8,9 @@ export default {
     v8Flags: '--expose_gc',
     markingMode: 'none'
   },
-  windows: {}
+  windows: {
+    sourceProtect: true
+  },
+  bundler: 'vite',
+  bundlerConfigPath: 'vite.config.mts'
 } as NativeScriptConfig;

@@ -4,18 +4,22 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@nativescript/core": "dev",
-    "nativescript": "^9.1.0-dev.2026-06-16-27624885927",
+    "@nativescript/core": "https://pkg.pr.new/@nativescript/core@11272",
+    "@valor/nativescript-websockets": "^2.0.2",
     "nativescript-vue": "3.0.2"
   },
   "devDependencies": {
     "@nativescript/tailwind": "~4.0.3",
     "@nativescript/types": "~8.9.1",
-    "@nativescript/webpack": "dev",
-    "@nativescript/windows": "^0.1.0-beta.3",
+    "@nativescript/vite": "https://pkg.pr.new/@nativescript/vite@11272",
+    "@nativescript/windows-v8": "0.1.0-alpha.141",
     "@types/node": "~22.14.0",
+    "@vitejs/plugin-vue": "^6.0.9",
+    "@vitejs/plugin-vue-jsx": "^5.1.6",
+    "nativescript": "9.1.2-dev.2026-09-24-36031892256",
     "tailwindcss": "^4.1.3",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vue-tsc": "^3.3.11"
   },
   "scripts": {
     "clean": "npx ns clean",
